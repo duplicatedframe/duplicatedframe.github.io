@@ -54,9 +54,24 @@
                   <br />
                   
                       <div class="card">
-                          <a data-toggle="collapse" href=".toriContent" aria-expanded="false" aria-controls="toriContent"><img src="tori.png" class="card-img-top toriContent collapse show" /></a>
-                          <div class="tab-pane fade show active" id="v-overview" role="tabpanel" aria-labelledby="v-overview-tab">
-                              <img class="card-img-top" src="1.svg"/>
+                          <a data-toggle="collapse" href=".toriContent" aria-expanded="false" aria-controls="toriContent"><img src="images/tori.png" class="card-img-top toriContent collapse show" /></a>
+                          <div class="card-img-top toriContent collapse">
+                              <div id="toriCarousel" class="carousel slide" data-interval=false>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img class="d-block w-100" src="images/toriTrailer.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-block w-100" src="images/teamsize.svg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-block w-100" src="images/tori%20IGF%20storyboard.gif" alt="Third slide">
+                                    </div>
+                                      <div class="carousel-item">
+                                      <img class="d-block w-100" src="images/mayaWork.png" alt="Fourth slide">
+                                    </div>
+                                  </div>
+                                </div>
                           </div>
                           <div class="card-body">
                               <h3 class="card-title">Tori <small class="text-muted">(March 2016 – Present)</small></h3>
@@ -66,21 +81,22 @@
                                   <div class="row">
                                       <div class="col">
                                       <p><strong>Roles:</strong> Team Lead, Designer<br>
-                                          <strong>Team Size:</strong> 7</p>
+                                          <strong>Team Size:</strong> 7<br>
+                                          <a href="https://twitter.com/torigamedevs">@torigamedevs</a></p>
                                       </div>
                                   </div>
                                     <div class="row">
                                     <div class="nav flex-column nav-pills" id="v-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-overview-tab" data-toggle="pill" href="#v-overview" role="tab" aria-controls="v-overview" aria-selected="true">Overview</a>
-                                        <a class="nav-link" id="v-teamwork-tab" data-toggle="pill" href="#v-teamwork" role="tab" aria-controls="v-teamwork" aria-selected="false">Long-Term Teamwork</a>
-                                        <a class="nav-link" id="v-vision-tab" data-toggle="pill" href="#v-vision" role="tab" aria-controls="v-vision" aria-selected="false">Retaining a Vision</a>
-                                        <a class="nav-link" id="v-adapting-tab" data-toggle="pill" href="#v-adapting" role="tab" aria-controls="v-adapting" aria-selected="false">Adapting to Challenges</a>
+                                        <a class="nav-link active" id="v-overview-tab" data-toggle="pill" href="#v-overview" role="tab" aria-controls="v-overview" aria-selected="true" onclick="$('#toriCarousel').carousel(0)">Overview</a>
+                                        <a class="nav-link" id="v-teamwork-tab" data-toggle="pill" href="#v-teamwork" role="tab" aria-controls="v-teamwork" aria-selected="false" onclick="$('#toriCarousel').carousel(1)">Long-Term Teamwork</a>
+                                        <a class="nav-link" id="v-vision-tab" data-toggle="pill" href="#v-vision" role="tab" aria-controls="v-vision" aria-selected="false" onclick="$('#toriCarousel').carousel(2)">Retaining a Vision</a>
+                                        <a class="nav-link" id="v-adapting-tab" data-toggle="pill" href="#v-adapting" role="tab" aria-controls="v-adapting" aria-selected="false" onclick="$('#toriCarousel').carousel(3)">Adapting to Challenges</a>
                                     </div>
                                   
                                     <div class="tab-content col" id="v-pills-tabContent">
                                         <div class="tab-pane fade show active" id="v-overview" role="tabpanel" aria-labelledby="v-overview-tab">
                                             <p>Tori is a game where players fly as a bird through mystical floating islands channeling the musical spirits of the objects that once inhabited the land. By exploring and discovering these spirits, return life and music to the land.</p>
-                                            <p>With our relatively small team size, my role has changed by necessity to include programming, 3D modeling, and project managing on top of my primary work of designing. This has been truly valuable in furthering my understanding of what kinds of work each member of a small dev team does on a day to day basis. Many of the lessons I've learned in addition to this can be split into three main categories: <a href="#toriTeamwork">working on a team</a>, <a href="#toriVision">maintaining a vision while iterating</a>, and <a href="#toriAdapting">adapting to challenges along the way</a>.</p>
+                                            <p>With our relatively small team size, my role has changed by necessity to include programming, 3D modeling, and project managing on top of my primary work of designing. This has been truly valuable in furthering my understanding of what kinds of work each member of a small dev team does on a day to day basis. Many of the lessons I've learned in addition to this can be split into three main categories: working on a team, maintaining a vision while iterating, and adapting to challenges along the way.</p>
                                         </div>
                                         <div class="tab-pane fade" id="v-teamwork" role="tabpanel" aria-labelledby="v-teamwork-tab">
                                             <p>Before Tori, the longest I had worked on a single project was probably a couple of months, and I almost always knew the people that I worked with. I was scared out of my mind that working on this project for <strong>years</strong> with people I had never worked with would be impossible. And, to be fair, there were definitely bumps along the way. At the beginning of the project, myself and one other teammate simply could not get along. Not only was their vision of what the project would become drastically different from my own, but differences in the way we communicated stood in the way of us being open to each others' ideas.</p>
@@ -100,21 +116,50 @@
                       </div>
                   <br />
                   <div class="card">
-                          <a data-toggle="collapse" href=".moreContent" aria-expanded="false" aria-controls="moreContent"><img src="placeholder.png" class="card-img-top" /></a>
-                          <div class="card-body">
+                          <a data-toggle="collapse" href=".moreContent" aria-expanded="false" aria-controls="moreContent"><img src="images/otherProjects.png" class="card-img-top collapse show moreContent" /></a>
+                          <div class="card-img-top moreContent collapse">
+                              <div id="moreCarousel" class="carousel slide" data-interval=false>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img class="d-block w-100" src="images/window.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-block w-100" src="images/twohundredseventythree.png" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-block w-100" src="images/depth.png" alt="Third slide">
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                      <div class="card-body">
                               <h3 class="card-title">Other (smaller) Projects</h3>
-                              <p class="card-subtitle">Though it is the project that is most relevant to me as a designer, Tori isn't all I've made. Although most of the other work I've done hasn't seen the light of day, it has taught me many lessons.</p>
-                              
-                              <div class="collapse card-text moreContent">
-                                  <br />
-                                  <p>I am currently the team’s lead and a designer on the project, but it is worth noting that Tori was not my project from the start.</p>
-                                  <p>Chris Wiley presented the original idea for Tori in a design class at Indiana University. After his pitch, myself and two others joined his team to flesh out a design document for the game under the assumption that it would never actually be made. Our ideas were all over the place and the scope of the project (if the game were to ever actually be made) ballooned to an incredible size, but we didn’t recognize this at the time. During our push to the end of the semester (and the subsequent graduation all of the team’s members other than myself), we became incredibly excited about the concept and decided to work on it into the summer.</p>
-                                  <p>This didn’t happen.</p>
-                                  <p>I was then approached by the head of the Game Design program and asked to present Tori to the </p>
+                              <p class="card-subtitle collapse show moreContent">Though it is the project that is most relevant to me as a designer, Tori isn't all I've made. Although most of the other work I've done hasn't seen the light of day, it has taught me many lessons.</p>                              
+                              <div class="container collapse card-text moreContent">
+                                    <div class="row">
+                                    <div class="nav flex-column nav-pills" id="more-tab" role="tablist" aria-orientation="vertical">
+                                        <a class="nav-link active" id="more-window-tab" data-toggle="pill" href="#more-window" role="tab" aria-controls="more-window" aria-selected="true" onclick="$('#moreCarousel').carousel(0)">Window</a>
+                                        <a class="nav-link" id="more-273-tab" data-toggle="pill" href="#more-273" role="tab" aria-controls="more-273" aria-selected="false" onclick="$('#moreCarousel').carousel(1)">Two Hundred Seventy Three</a>
+                                        <a class="nav-link" id="more-depth-tab" data-toggle="pill" href="#more-depth" role="tab" aria-controls="more-depth" aria-selected="false" onclick="$('#moreCarousel').carousel(2)">Lacking Depth</a>
+                                    </div>
+                                  
+                                    <div class="tab-content col" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="more-window" role="tabpanel" aria-labelledby="more-window-tab">
+                                            <p></p>
+                                        </div>
+                                        <div class="tab-pane fade" id="more-273" role="tabpanel" aria-labelledby="more-273-tab">
+                                            <p></p>
+                                        </div>
+                                        <div class="tab-pane fade" id="more-depth" role="tabpanel" aria-labelledby="more-depth-tab">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                  </div>
                               </div>
                           </div>
-                          <a class="collapse show moreContent" data-toggle="collapse" href=".moreContent" aria-expanded="false" aria-controls="moreContent"><div class="card-footer text-muted text-center">
-                              click to expand
+                          <a data-toggle="collapse" href=".moreContent" aria-expanded="false" aria-controls="moreContent"><div class="card-footer text-muted text-center">
+                              <div class="collapse show moreContent">click to expand</div>
+                              <div class="collapse moreContent">click to collapse</div>
                           </div></a>
                       </div>
               </div>
