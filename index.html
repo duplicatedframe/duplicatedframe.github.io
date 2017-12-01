@@ -54,7 +54,10 @@
                   <br />
                   
                       <div class="card">
-                          <a data-toggle="collapse" href=".toriContent" aria-expanded="false" aria-controls="toriContent"><img src="tori.png" class="card-img-top toriContent show" /></a>
+                          <a data-toggle="collapse" href=".toriContent" aria-expanded="false" aria-controls="toriContent"><img src="tori.png" class="card-img-top toriContent collapse show" /></a>
+                          <div class="tab-pane fade show active" id="v-overview" role="tabpanel" aria-labelledby="v-overview-tab">
+                              <img class="card-img-top" src="1.svg"/>
+                          </div>
                           <div class="card-body">
                               <h3 class="card-title">Tori <small class="text-muted">(March 2016 – Present)</small></h3>
                               <p class="card-subtitle collapse show toriContent">If you want to know anything about me as a designer, or even just as a person, Tori is the project to look to. It is my current project, and I have been working on it since March of 2016.</p>
@@ -65,15 +68,13 @@
                                       <p><strong>Roles:</strong> Team Lead, Designer<br>
                                           <strong>Team Size:</strong> 7</p>
                                       </div>
-                                      <div class="col">
-                                          
-                                      </div>
                                   </div>
                                     <div class="row">
-                                    <div class="nav flex-column" id="v-tab" role="tablist" aria-orientation="vertical">
-                                      <a class="nav-link active" id="v-overview-tab" data-toggle="tab" href="#v-overview" role="tab" aria-controls="v-overview" aria-selected="true">Overview</a>
-                                      <a class="nav-link" id="v-teamwork-tab" data-toggle="tab" href="#v-teamwork" role="tab" aria-controls="v-teamwork" aria-selected="false">Long-Term Teamwork</a>
-                                      <a class="nav-link" id="v-vision-tab" data-toggle="tab" href="#v-vision" role="tab" aria-controls="v-vision" aria-selected="false">Retaining a Vision</a>
+                                    <div class="nav flex-column nav-pills" id="v-tab" role="tablist" aria-orientation="vertical">
+                                        <a class="nav-link active" id="v-overview-tab" data-toggle="pill" href="#v-overview" role="tab" aria-controls="v-overview" aria-selected="true">Overview</a>
+                                        <a class="nav-link" id="v-teamwork-tab" data-toggle="pill" href="#v-teamwork" role="tab" aria-controls="v-teamwork" aria-selected="false">Long-Term Teamwork</a>
+                                        <a class="nav-link" id="v-vision-tab" data-toggle="pill" href="#v-vision" role="tab" aria-controls="v-vision" aria-selected="false">Retaining a Vision</a>
+                                        <a class="nav-link" id="v-adapting-tab" data-toggle="pill" href="#v-adapting" role="tab" aria-controls="v-adapting" aria-selected="false">Adapting to Challenges</a>
                                     </div>
                                   
                                     <div class="tab-content col" id="v-pills-tabContent">
@@ -86,7 +87,9 @@
                                         </div>
                                         <div class="tab-pane fade" id="v-vision" role="tabpanel" aria-labelledby="v-vision-tab">
                                         </div>
-                                  </div>
+                                        <div class="tab-pane fade" id="v-adapting" role="tabpanel" aria-labelledby="v-adapting-tab">
+                                        </div>
+                                    </div>
                                   </div>
                               </div>
                           </div>
