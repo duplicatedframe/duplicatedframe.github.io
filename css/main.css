@@ -1,3 +1,43 @@
-body{
-    margin-top: 20px
+body {
+    margin-top: 20px;
+}
+
+a {
+    color: #599ad3;
+}
+
+h1{
+    color: #e3185d;
+}
+
+.card-text {
+    background-color: #f1f3f6;
+}
+
+.card-title {
+    background-color: white;
+}
+
+.card-subtitle {
+    background-color: white;
+}
+
+.content {
+    background-color: white;
+}
+
+.lead{
+    color: #000000;
+}
+
+.nav-pills > a.active {
+    background-color: #599ad3 !important;
+}
+
+.nav-pills > a:hover {
+    background-color: #ffffff;
+}
+
+.nav-link {
+    color: #599ad3;
 }
