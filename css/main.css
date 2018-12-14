@@ -28,6 +28,8 @@ h1{
 
 .lead{
     color: #000000;
+    margin-top: -5px;
+    margin-left: 15px;
 }
 
 .nav-pills > a.active {
