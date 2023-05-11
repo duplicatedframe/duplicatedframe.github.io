@@ -2,18 +2,29 @@ a {
     color: #599ad3;
 }
 
-h1{
+h1 {
     color: #e3185d;
-    margin-top: 15px;
+    margin-top: 0.25em;
     margin-bottom: 0%;
-    padding-left: 10px;
+    padding-left: 0.25em;
 }
 
-.card-body{
-    background-color: white;
+table, td, th {
+    border-color: #000000;
+    border: 1pt solid;
+    border-collapse: collapse;
 }
 
-.content {
+table {
+    margin: auto 20%;
+    width: 60%;
+}
+
+td {
+    padding: 0.25em;
+}
+
+.card-body, .content {
     background-color: white;
 }
 
@@ -102,4 +113,8 @@ h1{
 #contact {
     margin: 1em;
     float: left;
+}
+
+#nav-widrn-tab {
+    border-style: dashed;
 }
