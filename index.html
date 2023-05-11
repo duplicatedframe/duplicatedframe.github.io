@@ -12,6 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
     integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
     crossorigin="anonymous"></script>
+  <script src = "main.js"></script>
 
   <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
@@ -35,6 +36,14 @@
   </div>
   <div class="container">
     <nav class="nav nav-tabs justify-content-end" role="tablist">
+      <!--
+        TODO: style "widrn" tab
+         - swap between ? and ! to display active state
+         - dashed outline
+         - separate state management from right-justified tabs
+      -->
+      <a class="nav-item nav-link" id="nav-widrn-tab" data-toggle="tab" href="#nav-widrn" role="tab"
+        aria-controls="nav-widrn" aria-selected="false">?</a>
       <a class="nav-item nav-link active" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab"
         aria-controls="nav-about" aria-selected="true">about me</a>
       <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab"
@@ -42,7 +51,58 @@
     </nav>
   </div>
 
-  <div class="container">
+  <!--
+    TabPanel Template:
+    <div class="tab-pane fade collapse show active" id="nav-section-name" role="tabpanel" aria-labelledby="nav-section-name-tab" aria-expanded="true">
+      <div class="container">
+        <p class="hidden">
+          &nbsp;
+        </p>
+        <p class="paragraph-{{n}}">
+          Cillum pariatur tempor duis veniam commodo exercitation qui deserunt laborum ex minim cillum dolor fugiat. Eiusmod id amet sint irure exercitation cupidatat ipsum est tempor. Enim commodo officia dolor amet voluptate et voluptate ut nulla adipisicing sint labore non. Aliquip occaecat do quis labore voluptate adipisicing enim. Excepteur nostrud minim velit non exercitation ea amet laborum Lorem adipisicing.
+        </p>
+        <img id="image-id" src="images/file-name.jpg" alt="Consectetur tempor non dolore enim cupidatat ut sunt excepteur deserunt officia.">
+        <p class="paragraph-{{n + 1}}">
+          Cillum pariatur tempor duis veniam commodo exercitation qui deserunt laborum ex minim cillum dolor fugiat. Eiusmod id amet sint irure exercitation cupidatat ipsum est tempor. Enim commodo officia dolor amet voluptate et voluptate ut nulla adipisicing sint labore non. Aliquip occaecat do quis labore voluptate adipisicing enim. Excepteur nostrud minim velit non exercitation ea amet laborum Lorem adipisicing.
+        </p>
+      </div>
+      <div class="container" id="contact">
+          <h3>Section Header</h3>
+          <ul>
+            <li>example</li>
+          </ul>
+      </div>
+    </div>
+  -->
+  <div class="container" id="main-view">
+    <div class="tab-pane fade collapse" id="nav-widrn" role="tabpanel" aria-labelledby="nav-widrn-tab" aria-expanded="false">
+      <div class="container">
+        &nbsp;
+        <h2>
+          what i'm doing right now
+        </h2>
+        <p class="paragraph-1">
+          Cillum pariatur tempor duis veniam commodo exercitation qui deserunt laborum ex minim cillum dolor fugiat. Eiusmod id amet sint irure exercitation cupidatat ipsum est tempor. Enim commodo officia dolor amet voluptate et voluptate ut nulla adipisicing sint labore non. Aliquip occaecat do quis labore voluptate adipisicing enim. Excepteur nostrud minim velit non exercitation ea amet laborum Lorem adipisicing.
+        </p>
+
+        <h3>
+          my local weather
+        </h3>
+        &nbsp;
+        <table>
+          <tr>
+            <td id="weather-date-and-time-label" colspan="3">Date</td>
+          </tr>
+          <tr>
+            <td id="weather-icon-offset" rowspan="2">Icon</td>
+            <td id="weather-temp-and-descrip-label" colspan="2">Temp & Descrip</td>
+          </tr>
+          <tr>
+            <td colspan="2">Feels/Low/High</td>
+          </tr>
+        </table>
+      </div>
+    </div>
     <div class="tab-pane fade collapse show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab" aria-expanded="true">
       <div class="container">
         <p id="about-me">
