@@ -4,7 +4,7 @@ a {
 
 h1 {
     color: #e3185d;
-    margin-top: 0.25em;
+    margin-top: 0.5em;
     margin-bottom: 0%;
     padding-left: 0.25em;
 }
@@ -26,6 +26,18 @@ td {
 
 .card-body, .content {
     background-color: white;
+}
+
+.card-subtitle {
+    font-size: medium;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1pt solid;
+    border-radius: 0.25em;
+    border-color: #f1f3f6;
 }
 
 .subtitle {
@@ -108,13 +120,10 @@ td {
     margin-right: auto;
     min-width: none;
     max-width: 40%;
+    padding: 0.2em;
 }
 
 #contact {
     margin: 1em;
     float: left;
-}
-
-#nav-widrn-tab {
-    border-style: dashed;
 }
